@@ -1,0 +1,13 @@
+{% extends "base.jinja" %}
+
+{% block content %}
+<header>{% if user %}
+    <div class="avatar"></div>
+    <p>{{user.username}}</p>
+    {% else %}
+    <div class="avatar empty"></div>
+    <p>Not logged in</p>
+    {% endif %}
+</header>
+<h1>Home</h1>
+{% endblock content %}
