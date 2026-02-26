@@ -1,0 +1,32 @@
+{% extends "base.jinja" %}
+
+{% block content %}
+<div id="home">
+    <header>
+        <h1>{% if page == "profile" %}Profile{% else %}Chat{% endif %}</h1>{% if user %}
+        <a href="/profile">
+            <div class="avatar"></div>
+            <p>{{user.username}}</p>
+        </a>
+        {% else %}
+        <a href="/login">
+            <div class="avatar empty"></div>
+            <p>Not logged in</p>
+        </a>
+
+        {% endif %}
+    </header>
+    <nav>
+        <a href="/">{% include "icons/plus-icon.jinja" %}</a>
+        <a href="/chats">{% include "icons/chats-icon.jinja" %}</a>
+        <a href="/profile">{% include "icons/user-icon.jinja" %}</a>
+    </nav>
+    <div id="page">
+        {% block page_content %}
+        {% endblock page_content %}
+    </div>
+
+</div>
+
+
+{% endblock content %}

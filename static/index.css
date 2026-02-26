@@ -1,13 +1,14 @@
 :root {
   --black: #0b090a;
   --white: #ffffff;
-  --light-grey: #f5f5f5;
+  --light-grey: #efedec;
   --grey: #efebed;
   --dark-grey: #bbc2c9;
   --red: #d00000;
   --green: #a7c957;
   --orange: #f4a261;
   --brown: #a98467;
+  --light-blue: #ade8f4;
 }
 
 body {
@@ -15,7 +16,8 @@ body {
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
-  margin: 20px;
+  background-color: var(--light-grey);
+  margin: 0;
 }
 
 p.red,
@@ -26,7 +28,9 @@ span.red {
 header {
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: space-between;
+  grid-area: header;
+  margin: 0 20px;
 }
 
 header .avatar {
@@ -41,6 +45,49 @@ header .avatar.empty {
   background-color: var(--grey);
 }
 
+#home {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  grid-template-rows: 90px 1fr;
+  grid-template-areas: "navbar header" "navbar chat";
+  min-height: 100vh;
+}
+
+#home #page {
+  grid-area: chat;
+  margin: 0 20px;
+}
+
+#home nav {
+  grid-area: navbar;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  border-right: 1px solid var(--dark-grey);
+  padding: 30px 0;
+}
+
+#home nav svg {
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#home nav svg.active {
+  background-color: var(--black);
+}
+
+#home nav svg.active path {
+  stroke: var(--white);
+}
+
+#home header a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
 #login {
   display: flex;
   flex-direction: column;
@@ -50,4 +97,74 @@ header .avatar.empty {
 #login button {
   margin-top: 10px;
   margin-bottom: 20px;
+}
+
+#content {
+  margin-top: 40px;
+  margin-bottom: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+#content .message {
+  padding: 10px;
+  border-radius: 7px;
+  max-width: 800px;
+  background-color: var(--white);
+}
+
+#content .question {
+  align-self: flex-end;
+  background-color: var(--black);
+  color: var(--white);
+}
+
+#home form {
+  position: fixed;
+  z-index: 5;
+  bottom: 10px;
+  right: 0;
+  display: flex;
+  padding: 20px;
+  border-radius: 7px;
+  background-color: var(--white);
+  border: 1px solid var(--black);
+  gap: 20px;
+}
+
+#home form textarea {
+  border: none;
+  outline: none;
+}
+
+#home form button {
+  background-color: var(--black);
+  color: var(--white);
+  padding: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  outline: none;
+}
+
+#home form button::after {
+  content: "Send";
+}
+
+#home form button.htmx-request::after {
+  content: "Sending...";
+}
+
+#chat_list a {
+  display: flex;
+  flex-wrap: wrap;
+  text-decoration: none;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid var(--black);
+  margin-top: 20px;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--black);
 }

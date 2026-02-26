@@ -8,6 +8,8 @@ class TypeEnum(str, Enum):
 
 
 class DocumentBody(BaseModel):
+    title: str
     text: str
     type: TypeEnum
     dataset: str
+    summary: str | None

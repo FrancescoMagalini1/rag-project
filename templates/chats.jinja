@@ -1,0 +1,15 @@
+{% extends "main.jinja" %}
+
+{% block page_content %}
+
+<div id="chat_list">
+    {% for message in chats %}
+    <a href="/chats/{{message.chat_id}}">
+        <p>{{message.created_at.strftime("%a %d %b %Y %H:%M")}}</p>
+        <p>{{message.content|truncate(55)}}</p>
+    </a>
+
+    {% endfor %}
+</div>
+
+{% endblock page_content %}

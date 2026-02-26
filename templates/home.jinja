@@ -1,13 +1,20 @@
-{% extends "base.jinja" %}
+{% extends "main.jinja" %}
 
-{% block content %}
-<header>{% if user %}
-    <div class="avatar"></div>
-    <p>{{user.username}}</p>
-    {% else %}
-    <div class="avatar empty"></div>
-    <p>Not logged in</p>
-    {% endif %}
-</header>
-<h1>Home</h1>
-{% endblock content %}
+{% block page_content %}
+
+<div id="content">
+        {% for message in messages %}
+        <div class="message {{'answer to-format' if message.type == 'answer' else 'question'}}">
+                {{message.content}}
+        </div>
+        {% endfor %}
+</div>
+
+<form hx-get="/api/answer" hx-swap="none" hx-disabled-elt="textarea, button" hx-indicator="button"><textarea rows="2"
+                cols="50" placeholder="Ask Anything" id="message" name="message"></textarea><input id="chat_id"
+                name="chat_id" type="hidden" value="{{chat_id}}" /><button type="submit"></button>
+</form>
+
+
+
+{% endblock page_content %}

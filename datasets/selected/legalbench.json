@@ -1,0 +1,195 @@
+{
+  "contractnli": [
+    [
+      "contractnli",
+      "datasets\\LegalBench-RAG\\corpus\\contractnli\\FNHA-2019RFP-02-NDA-form.txt",
+      "FNHA-2019RFP-02-NDA-form.txt"
+    ],
+    [
+      "contractnli",
+      "datasets\\LegalBench-RAG\\corpus\\contractnli\\TSE-TSE-OK-WHK-Mutual-NDA-Fill-in-Blanks-4-29-2019.txt",
+      "TSE-TSE-OK-WHK-Mutual-NDA-Fill-in-Blanks-4-29-2019.txt"
+    ],
+    [
+      "contractnli",
+      "datasets\\LegalBench-RAG\\corpus\\contractnli\\Sony%20Pictures%20Television%20NDA%20(Executed).txt",
+      "Sony%20Pictures%20Television%20NDA%20(Executed).txt"
+    ],
+    [
+      "contractnli",
+      "datasets\\LegalBench-RAG\\corpus\\contractnli\\oceaneering-non-disclosure-agreement.txt",
+      "oceaneering-non-disclosure-agreement.txt"
+    ],
+    [
+      "contractnli",
+      "datasets\\LegalBench-RAG\\corpus\\contractnli\\ADVANIDE-NON-DISCLOSURE-AGREEMENT.txt",
+      "ADVANIDE-NON-DISCLOSURE-AGREEMENT.txt"
+    ],
+    [
+      "contractnli",
+      "datasets\\LegalBench-RAG\\corpus\\contractnli\\Data_Use_and_Non_Disclosure_Data_Disclosed_to_MDCH_Trauma_Registry_Final_465518_7.txt",
+      "Data_Use_and_Non_Disclosure_Data_Disclosed_to_MDCH_Trauma_Registry_Final_465518_7.txt"
+    ],
+    [
+      "contractnli",
+      "datasets\\LegalBench-RAG\\corpus\\contractnli\\lti-two-way-cda-template.txt",
+      "lti-two-way-cda-template.txt"
+    ],
+    [
+      "contractnli",
+      "datasets\\LegalBench-RAG\\corpus\\contractnli\\tpi-non-disclosure-agreement_1.txt",
+      "tpi-non-disclosure-agreement_1.txt"
+    ],
+    [
+      "contractnli",
+      "datasets\\LegalBench-RAG\\corpus\\contractnli\\5-NSK-Confidentiality-Agreement-for-Suppliers.txt",
+      "5-NSK-Confidentiality-Agreement-for-Suppliers.txt"
+    ],
+    [
+      "contractnli",
+      "datasets\\LegalBench-RAG\\corpus\\contractnli\\eHandshake_Non_Disclosure_Agreement.txt",
+      "eHandshake_Non_Disclosure_Agreement.txt"
+    ]
+  ],
+  "cuad": [
+    [
+      "cuad",
+      "datasets\\LegalBench-RAG\\corpus\\cuad\\KIROMICBIOPHARMA,INC_05_11_2020-EX-10.23-CONSULTING AGREEMENT.txt",
+      "KIROMICBIOPHARMA,INC_05_11_2020-EX-10.23-CONSULTING AGREEMENT.txt"
+    ],
+    [
+      "cuad",
+      "datasets\\LegalBench-RAG\\corpus\\cuad\\CARDAX,INC_08_19_2014-EX-10.1-COLLABORATION AGREEMENT.txt",
+      "CARDAX,INC_08_19_2014-EX-10.1-COLLABORATION AGREEMENT.txt"
+    ],
+    [
+      "cuad",
+      "datasets\\LegalBench-RAG\\corpus\\cuad\\IDREAMSKYTECHNOLOGYLTD_07_03_2014-EX-10.39-Cooperation Agreement on Mobile Game Business.txt",
+      "IDREAMSKYTECHNOLOGYLTD_07_03_2014-EX-10.39-Cooperation Agreement on Mobile Game Business.txt"
+    ],
+    [
+      "cuad",
+      "datasets\\LegalBench-RAG\\corpus\\cuad\\CORALGOLDRESOURCES,LTD_05_28_2020-EX-4.1-CONSULTING AGREEMENT.txt",
+      "CORALGOLDRESOURCES,LTD_05_28_2020-EX-4.1-CONSULTING AGREEMENT.txt"
+    ],
+    [
+      "cuad",
+      "datasets\\LegalBench-RAG\\corpus\\cuad\\DYNAMEXINC_06_06_1996-EX-10.4-TRANSPORTATION SERVICES AGREEMENT.txt",
+      "DYNAMEXINC_06_06_1996-EX-10.4-TRANSPORTATION SERVICES AGREEMENT.txt"
+    ],
+    [
+      "cuad",
+      "datasets\\LegalBench-RAG\\corpus\\cuad\\EmbarkComInc_19991008_S-1A_EX-10.10_6487661_EX-10.10_Co-Branding Agreement.txt",
+      "EmbarkComInc_19991008_S-1A_EX-10.10_6487661_EX-10.10_Co-Branding Agreement.txt"
+    ],
+    [
+      "cuad",
+      "datasets\\LegalBench-RAG\\corpus\\cuad\\DUOSTECHNOLOGIESGROUP,INC_04_21_2009-EX-10.1-STRATEGIC ALLIANCE AGREEMENT.txt",
+      "DUOSTECHNOLOGIESGROUP,INC_04_21_2009-EX-10.1-STRATEGIC ALLIANCE AGREEMENT.txt"
+    ],
+    [
+      "cuad",
+      "datasets\\LegalBench-RAG\\corpus\\cuad\\LOOKSMARTLTD_07_20_2012-EX-99.(D)(I)-SPONSORSHIP AGREEMENT.txt",
+      "LOOKSMARTLTD_07_20_2012-EX-99.(D)(I)-SPONSORSHIP AGREEMENT.txt"
+    ],
+    [
+      "cuad",
+      "datasets\\LegalBench-RAG\\corpus\\cuad\\ImineCorp_20180725_S-1_EX-10.5_11275970_EX-10.5_Distributor Agreement.txt",
+      "ImineCorp_20180725_S-1_EX-10.5_11275970_EX-10.5_Distributor Agreement.txt"
+    ],
+    [
+      "cuad",
+      "datasets\\LegalBench-RAG\\corpus\\cuad\\ClickstreamCorp_20200330_1-A_EX1A-6 MAT CTRCT_12089935_EX1A-6 MAT CTRCT_Development Agreement.txt",
+      "ClickstreamCorp_20200330_1-A_EX1A-6 MAT CTRCT_12089935_EX1A-6 MAT CTRCT_Development Agreement.txt"
+    ]
+  ],
+  "maud": [
+    [
+      "maud",
+      "datasets\\LegalBench-RAG\\corpus\\maud\\Chiasma, Inc._Amryt Pharma plc.txt",
+      "Chiasma, Inc._Amryt Pharma plc.txt"
+    ],
+    [
+      "maud",
+      "datasets\\LegalBench-RAG\\corpus\\maud\\American_Renal_Associates_Holdings_IRC_Superman_Midco.txt",
+      "American_Renal_Associates_Holdings_IRC_Superman_Midco.txt"
+    ],
+    [
+      "maud",
+      "datasets\\LegalBench-RAG\\corpus\\maud\\Eidos Therapeutics, Inc._BridgeBio Pharma, Inc..txt",
+      "Eidos Therapeutics, Inc._BridgeBio Pharma, Inc..txt"
+    ],
+    [
+      "maud",
+      "datasets\\LegalBench-RAG\\corpus\\maud\\IEC_Electronics_Corp_Lindsay_Goldberg_LLC.txt",
+      "IEC_Electronics_Corp_Lindsay_Goldberg_LLC.txt"
+    ],
+    [
+      "maud",
+      "datasets\\LegalBench-RAG\\corpus\\maud\\TIFFANY_&_CO._LVMH_MO\u00cbT_HENNESSY-LOUIS_VUITTON.txt",
+      "TIFFANY_&_CO._LVMH_MO\u00cbT_HENNESSY-LOUIS_VUITTON.txt"
+    ],
+    [
+      "maud",
+      "datasets\\LegalBench-RAG\\corpus\\maud\\Kadmon_Holdings_Sanofi_SA_Merger_Agreement.txt",
+      "Kadmon_Holdings_Sanofi_SA_Merger_Agreement.txt"
+    ],
+    [
+      "maud",
+      "datasets\\LegalBench-RAG\\corpus\\maud\\Cloudera, Inc._Investment Group.txt",
+      "Cloudera, Inc._Investment Group.txt"
+    ],
+    [
+      "maud",
+      "datasets\\LegalBench-RAG\\corpus\\maud\\MSG Networks Inc._Madison Square Garden Entertainment Corp..txt",
+      "MSG Networks Inc._Madison Square Garden Entertainment Corp..txt"
+    ],
+    [
+      "maud",
+      "datasets\\LegalBench-RAG\\corpus\\maud\\Select_Bancorp_Inc_First_Bancorp.txt",
+      "Select_Bancorp_Inc_First_Bancorp.txt"
+    ],
+    [
+      "maud",
+      "datasets\\LegalBench-RAG\\corpus\\maud\\NIC Inc._Tyler Technologies, Inc..txt",
+      "NIC Inc._Tyler Technologies, Inc..txt"
+    ]
+  ],
+  "privacy_qa": [
+    [
+      "privacy_qa",
+      "datasets\\LegalBench-RAG\\corpus\\privacy_qa\\23andMe.txt",
+      "23andMe.txt"
+    ],
+    [
+      "privacy_qa",
+      "datasets\\LegalBench-RAG\\corpus\\privacy_qa\\Fiverr.txt",
+      "Fiverr.txt"
+    ],
+    [
+      "privacy_qa",
+      "datasets\\LegalBench-RAG\\corpus\\privacy_qa\\Groupon.txt",
+      "Groupon.txt"
+    ],
+    [
+      "privacy_qa",
+      "datasets\\LegalBench-RAG\\corpus\\privacy_qa\\Keep.txt",
+      "Keep.txt"
+    ],
+    [
+      "privacy_qa",
+      "datasets\\LegalBench-RAG\\corpus\\privacy_qa\\TickTick_ To Do List with Reminder, Day Planner.txt",
+      "TickTick_ To Do List with Reminder, Day Planner.txt"
+    ],
+    [
+      "privacy_qa",
+      "datasets\\LegalBench-RAG\\corpus\\privacy_qa\\Viber Messenger.txt",
+      "Viber Messenger.txt"
+    ],
+    [
+      "privacy_qa",
+      "datasets\\LegalBench-RAG\\corpus\\privacy_qa\\Wordscapes.txt",
+      "Wordscapes.txt"
+    ]
+  ]
+}

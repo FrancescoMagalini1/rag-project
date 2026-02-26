@@ -1,9 +1,20 @@
-from sqlmodel import Field, Session, SQLModel, create_engine, select, JSON, Column
+from sqlmodel import (
+    Field,
+    Session,
+    SQLModel,
+    create_engine,
+    select,
+    JSON,
+    Column,
+    DateTime,
+)
+from sqlalchemy.sql import func
 from typing import Annotated, Dict
 from fastapi import Depends
 from enum import Enum
 from ulid import ULID
 import bcrypt
+from datetime import datetime
 
 
 class UserTypeEnum(str, Enum):
@@ -12,7 +23,7 @@ class UserTypeEnum(str, Enum):
 
 
 class User(SQLModel, table=True):
-    id: str = Field(primary_key=True)
+    id: str = Field(primary_key=True, default=lambda: str(ULID()))
     username: str = Field(index=True)
     password: str
     type: UserTypeEnum
@@ -20,6 +31,26 @@ class User(SQLModel, table=True):
 
     class Config:
         arbitrary_types_allowed = True
+
+
+class MessageTypeEnum(str, Enum):
+    QUESTION = "question"
+    ANSWER = "answer"
+
+
+class Message(SQLModel, table=True):
+    id: str = Field(primary_key=True, default=str(ULID()))
+    chat_id: str = Field(index=True, default=str(ULID()))
+    user_id: str = Field(index=True, nullable=True)
+    type: MessageTypeEnum
+    content: str
+    created_at: datetime = Field(
+        sa_column=Column(
+            DateTime(timezone=True),
+            server_default=func.now(),
+            nullable=False,
+        )
+    )
 
 
 sqlite_file_name = "database/data.db"

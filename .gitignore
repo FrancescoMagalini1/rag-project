@@ -11,3 +11,6 @@ wheels/
 
 # Other
 database
+logs
+
+.env
