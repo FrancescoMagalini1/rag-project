@@ -17,6 +17,7 @@ function addResponse(e) {
 
     content.appendChild(questionDiv);
     content.appendChild(answerDiv);
+    form.querySelector("textarea").value = "";
   } catch (error) {
     console.error(error);
   }

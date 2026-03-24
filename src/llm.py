@@ -10,7 +10,7 @@ tools = [retrieve_context_tool]
 prompt = (
     "You have access to a tool that retrieves possible context sections."
     """Use the tool to help answer user queries. You are free pick only the sections that you think are useful. 
-    Please do not reply using markdown but just text."""
+    Please do not reply using markdown or line breaks but just plain text."""
 )
 agent = create_agent(llm_model, tools, system_prompt=prompt)
 

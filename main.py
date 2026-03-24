@@ -129,6 +129,7 @@ async def chats(
     rag_jwt_token: Annotated[str | None, Cookie()] = None,
 ):
     """Returns the Chats page. A list of the _n_ (=50) most recent chats from newest to oldest."""
+    user = None
     if rag_jwt_token:
         user = authenticate(rag_jwt_token, sql_session)
     if user:

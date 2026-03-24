@@ -91,12 +91,49 @@ header .avatar.empty {
 #login {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+#login main {
+  display: flex;
+  flex-direction: column;
+  width: min(600px, 60vw);
 }
 
 #login input,
 #login button {
   margin-top: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+#login label {
+  cursor: pointer;
+}
+
+#login input {
+  padding: 5px;
+  border-radius: 4px;
+  border: 2px solid var(--dark-grey);
+  outline: none;
+}
+
+#login input:focus {
+  border: 2px solid var(--black);
+}
+
+#login button {
+  background-color: var(--black);
+  color: var(--white);
+  cursor: pointer;
+  width: fit-content;
+  padding: 5px 60px;
+  align-self: center;
+  outline: none;
+  border-radius: 4px;
+  border: none;
 }
 
 #content {
@@ -131,6 +168,7 @@ header .avatar.empty {
   background-color: var(--white);
   border: 1px solid var(--black);
   gap: 20px;
+  align-items: center;
 }
 
 #home form textarea {
@@ -145,6 +183,8 @@ header .avatar.empty {
   border-radius: 6px;
   cursor: pointer;
   outline: none;
+  width: fit-content;
+  height: fit-content;
 }
 
 #home form button::after {
